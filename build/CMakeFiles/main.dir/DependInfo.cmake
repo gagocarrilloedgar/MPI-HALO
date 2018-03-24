@@ -4,12 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/edgar/Escritorio/3B/HPC/HEAT-COND/MPI_basic.c" "/home/edgar/Escritorio/3B/HPC/HEAT-COND/build/CMakeFiles/main.dir/MPI_basic.c.o"
-  "/home/edgar/Escritorio/3B/HPC/HEAT-COND/data_placer.c" "/home/edgar/Escritorio/3B/HPC/HEAT-COND/build/CMakeFiles/main.dir/data_placer.c.o"
-  "/home/edgar/Escritorio/3B/HPC/HEAT-COND/data_to_send.c" "/home/edgar/Escritorio/3B/HPC/HEAT-COND/build/CMakeFiles/main.dir/data_to_send.c.o"
-  "/home/edgar/Escritorio/3B/HPC/HEAT-COND/halo_com.c" "/home/edgar/Escritorio/3B/HPC/HEAT-COND/build/CMakeFiles/main.dir/halo_com.c.o"
-  "/home/edgar/Escritorio/3B/HPC/HEAT-COND/main.c" "/home/edgar/Escritorio/3B/HPC/HEAT-COND/build/CMakeFiles/main.dir/main.c.o"
-  "/home/edgar/Escritorio/3B/HPC/HEAT-COND/worksplit.c" "/home/edgar/Escritorio/3B/HPC/HEAT-COND/build/CMakeFiles/main.dir/worksplit.c.o"
+  "/home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/MPI_basic.c" "/home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/build/CMakeFiles/main.dir/MPI_basic.c.o"
+  "/home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/data_placer.c" "/home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/build/CMakeFiles/main.dir/data_placer.c.o"
+  "/home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/data_to_send.c" "/home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/build/CMakeFiles/main.dir/data_to_send.c.o"
+  "/home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/halo_com.c" "/home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/build/CMakeFiles/main.dir/halo_com.c.o"
+  "/home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/main.c" "/home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/build/CMakeFiles/main.dir/main.c.o"
+  "/home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/worksplit.c" "/home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/build/CMakeFiles/main.dir/worksplit.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

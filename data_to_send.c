@@ -5,25 +5,52 @@ void data_to_send(int N, double M[],double S[],int *mystart,int *myend){
 
 	int width=N;
 	int heigth;
-	heigth= myend-mystart+1;
+	heigth= *myend-*mystart+1;
 
-	if (rank()%2==0)
+	if(commsize()%2==0)
 	{
-		for (int j = 0; j <1 ; ++j)
+		if (rank()%2==0)
 		{
-			for (int i = 0; i < width; ++i)
+			for (int j = 0; j <1 ; ++j)
 			{
-				*(S+i+j*width)=*(M+i+(j+heigth)*width);
+				for (int i = 0; i < width; ++i)
+				{
+					*(S+i+j*width)=*(M+i+(j+heigth)*width);
+				}
+			}
+		}
+		else if(rank()%2!=0)
+		{
+			for (int j = 0; j < 1 ; ++j)
+			{
+				for (int i = 0; i < width; ++i)
+				{
+					*(S+i+j*width)=*(M+i+(j+1)*width);
+				}
 			}
 		}
 	}
-	else
+
+	else if(commsize()%2!=0)
 	{
-		for (int j = 0; j < 1 ; ++j)
+		if (rank()%2==0 && rank()!=(commsize()-1))
 		{
-			for (int i = 0; i < width; ++i)
+			for (int j = 0; j <1 ; ++j)
 			{
-				*(S+i+j*width)=*(M+i+(j+1)*width);
+				for (int i = 0; i < width; ++i)
+				{
+					*(S+i+j*width)=*(M+i+(j+heigth)*width);
+				}
+			}
+		}
+		else if(rank()%2!=0)
+		{
+			for (int j = 0; j < 1 ; ++j)
+			{
+				for (int i = 0; i < width; ++i)
+				{
+					*(S+i+j*width)=*(M+i+(j+1)*width);
+				}
 			}
 		}
 	}
@@ -34,27 +61,56 @@ void data_to_send2(int N, double M[],double S[],int *mystart,int *myend){
 
 	int width=N;
 	int heigth;
-	heigth= myend-mystart+1;
+	heigth= *myend-*mystart+1;
 
-	if (rank()%2==0 && rank()!=0)
+	if (commsize()%2==0)
 	{
-		for (int j = 0; j <1 ; ++j)
+		if (rank()%2==0 && rank()!=0)
 		{
-			for (int i = 0; i < width; ++i)
+			for (int j = 0; j <1 ; ++j)
 			{
-				*(S+i+j*width)=*(M+i+(j+1)*width);
+				for (int i = 0; i < width; ++i)
+				{
+					*(S+i+j*width)=*(M+i+(j+1)*width);
+				}
+			}
+		}
+		else if (rank()%2!=0 && rank()!=(commsize()-1))
+		{
+			for (int j = 0; j < 1 ; ++j)
+			{
+				for (int i = 0; i < width; ++i)
+				{
+					*(S+i+j*width)=*(M+i+(j+heigth)*width);
+				}
 			}
 		}
 	}
-	else if (rank()%2!=0 && rank()!=(commsize()-1))
+
+	else if (commsize()%2!=0)
 	{
-		for (int j = 0; j < 1 ; ++j)
+		if (rank()%2==0 && rank()!=0)
 		{
-			for (int i = 0; i < width; ++i)
+			for (int j = 0; j <1 ; ++j)
 			{
-				*(S+i+j*width)=*(M+i+(j+heigth)*width);
+				for (int i = 0; i < width; ++i)
+				{
+					*(S+i+j*width)=*(M+i+(j+1)*width);
+				}
+			}
+		}
+		else if (rank()%2!=0)
+		{
+			for (int j = 0; j < 1 ; ++j)
+			{
+				for (int i = 0; i < width; ++i)
+				{
+					*(S+i+j*width)=*(M+i+(j+heigth)*width);
+				}
 			}
 		}
 	}
+
+		
 
 }

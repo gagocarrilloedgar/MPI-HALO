@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/edgar/Escritorio/3B/HPC/HEAT-COND
+CMAKE_SOURCE_DIR = /home/edgar/Escritorio/greva/3B/HPC/HEAT-COND
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/edgar/Escritorio/3B/HPC/HEAT-COND/build
+CMAKE_BINARY_DIR = /home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/main.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/main.dir/flags.make
 
 CMakeFiles/main.dir/worksplit.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/worksplit.c.o: ../worksplit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edgar/Escritorio/3B/HPC/HEAT-COND/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/main.dir/worksplit.c.o"
-	gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/worksplit.c.o   -c /home/edgar/Escritorio/3B/HPC/HEAT-COND/worksplit.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/main.dir/worksplit.c.o"
+	gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/worksplit.c.o   -c /home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/worksplit.c
 
 CMakeFiles/main.dir/worksplit.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/worksplit.c.i"
-	gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/edgar/Escritorio/3B/HPC/HEAT-COND/worksplit.c > CMakeFiles/main.dir/worksplit.c.i
+	gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/worksplit.c > CMakeFiles/main.dir/worksplit.c.i
 
 CMakeFiles/main.dir/worksplit.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/worksplit.c.s"
-	gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/edgar/Escritorio/3B/HPC/HEAT-COND/worksplit.c -o CMakeFiles/main.dir/worksplit.c.s
+	gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/worksplit.c -o CMakeFiles/main.dir/worksplit.c.s
 
 CMakeFiles/main.dir/worksplit.c.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/main.dir/worksplit.c.o.provides.build: CMakeFiles/main.dir/worksplit.
 
 CMakeFiles/main.dir/halo_com.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/halo_com.c.o: ../halo_com.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edgar/Escritorio/3B/HPC/HEAT-COND/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/main.dir/halo_com.c.o"
-	gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/halo_com.c.o   -c /home/edgar/Escritorio/3B/HPC/HEAT-COND/halo_com.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/main.dir/halo_com.c.o"
+	gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/halo_com.c.o   -c /home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/halo_com.c
 
 CMakeFiles/main.dir/halo_com.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/halo_com.c.i"
-	gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/edgar/Escritorio/3B/HPC/HEAT-COND/halo_com.c > CMakeFiles/main.dir/halo_com.c.i
+	gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/halo_com.c > CMakeFiles/main.dir/halo_com.c.i
 
 CMakeFiles/main.dir/halo_com.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/halo_com.c.s"
-	gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/edgar/Escritorio/3B/HPC/HEAT-COND/halo_com.c -o CMakeFiles/main.dir/halo_com.c.s
+	gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/halo_com.c -o CMakeFiles/main.dir/halo_com.c.s
 
 CMakeFiles/main.dir/halo_com.c.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/main.dir/halo_com.c.o.provides.build: CMakeFiles/main.dir/halo_com.c.
 
 CMakeFiles/main.dir/main.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edgar/Escritorio/3B/HPC/HEAT-COND/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/main.dir/main.c.o"
-	gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/main.c.o   -c /home/edgar/Escritorio/3B/HPC/HEAT-COND/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/main.dir/main.c.o"
+	gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/main.c.o   -c /home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/main.c
 
 CMakeFiles/main.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/main.c.i"
-	gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/edgar/Escritorio/3B/HPC/HEAT-COND/main.c > CMakeFiles/main.dir/main.c.i
+	gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/main.c > CMakeFiles/main.dir/main.c.i
 
 CMakeFiles/main.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/main.c.s"
-	gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/edgar/Escritorio/3B/HPC/HEAT-COND/main.c -o CMakeFiles/main.dir/main.c.s
+	gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/main.c -o CMakeFiles/main.dir/main.c.s
 
 CMakeFiles/main.dir/main.c.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/main.dir/main.c.o.provides.build: CMakeFiles/main.dir/main.c.o
 
 CMakeFiles/main.dir/data_placer.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/data_placer.c.o: ../data_placer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edgar/Escritorio/3B/HPC/HEAT-COND/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/main.dir/data_placer.c.o"
-	gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/data_placer.c.o   -c /home/edgar/Escritorio/3B/HPC/HEAT-COND/data_placer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/main.dir/data_placer.c.o"
+	gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/data_placer.c.o   -c /home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/data_placer.c
 
 CMakeFiles/main.dir/data_placer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/data_placer.c.i"
-	gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/edgar/Escritorio/3B/HPC/HEAT-COND/data_placer.c > CMakeFiles/main.dir/data_placer.c.i
+	gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/data_placer.c > CMakeFiles/main.dir/data_placer.c.i
 
 CMakeFiles/main.dir/data_placer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/data_placer.c.s"
-	gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/edgar/Escritorio/3B/HPC/HEAT-COND/data_placer.c -o CMakeFiles/main.dir/data_placer.c.s
+	gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/data_placer.c -o CMakeFiles/main.dir/data_placer.c.s
 
 CMakeFiles/main.dir/data_placer.c.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/main.dir/data_placer.c.o.provides.build: CMakeFiles/main.dir/data_pla
 
 CMakeFiles/main.dir/data_to_send.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/data_to_send.c.o: ../data_to_send.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edgar/Escritorio/3B/HPC/HEAT-COND/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/main.dir/data_to_send.c.o"
-	gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/data_to_send.c.o   -c /home/edgar/Escritorio/3B/HPC/HEAT-COND/data_to_send.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/main.dir/data_to_send.c.o"
+	gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/data_to_send.c.o   -c /home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/data_to_send.c
 
 CMakeFiles/main.dir/data_to_send.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/data_to_send.c.i"
-	gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/edgar/Escritorio/3B/HPC/HEAT-COND/data_to_send.c > CMakeFiles/main.dir/data_to_send.c.i
+	gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/data_to_send.c > CMakeFiles/main.dir/data_to_send.c.i
 
 CMakeFiles/main.dir/data_to_send.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/data_to_send.c.s"
-	gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/edgar/Escritorio/3B/HPC/HEAT-COND/data_to_send.c -o CMakeFiles/main.dir/data_to_send.c.s
+	gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/data_to_send.c -o CMakeFiles/main.dir/data_to_send.c.s
 
 CMakeFiles/main.dir/data_to_send.c.o.requires:
 
@@ -179,16 +179,16 @@ CMakeFiles/main.dir/data_to_send.c.o.provides.build: CMakeFiles/main.dir/data_to
 
 CMakeFiles/main.dir/MPI_basic.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/MPI_basic.c.o: ../MPI_basic.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edgar/Escritorio/3B/HPC/HEAT-COND/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/main.dir/MPI_basic.c.o"
-	gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/MPI_basic.c.o   -c /home/edgar/Escritorio/3B/HPC/HEAT-COND/MPI_basic.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/main.dir/MPI_basic.c.o"
+	gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/MPI_basic.c.o   -c /home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/MPI_basic.c
 
 CMakeFiles/main.dir/MPI_basic.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/MPI_basic.c.i"
-	gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/edgar/Escritorio/3B/HPC/HEAT-COND/MPI_basic.c > CMakeFiles/main.dir/MPI_basic.c.i
+	gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/MPI_basic.c > CMakeFiles/main.dir/MPI_basic.c.i
 
 CMakeFiles/main.dir/MPI_basic.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/MPI_basic.c.s"
-	gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/edgar/Escritorio/3B/HPC/HEAT-COND/MPI_basic.c -o CMakeFiles/main.dir/MPI_basic.c.s
+	gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/MPI_basic.c -o CMakeFiles/main.dir/MPI_basic.c.s
 
 CMakeFiles/main.dir/MPI_basic.c.o.requires:
 
@@ -222,7 +222,7 @@ main: CMakeFiles/main.dir/MPI_basic.c.o
 main: CMakeFiles/main.dir/build.make
 main: /usr/lib/openmpi/lib/libmpi.so
 main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edgar/Escritorio/3B/HPC/HEAT-COND/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -244,6 +244,6 @@ CMakeFiles/main.dir/clean:
 .PHONY : CMakeFiles/main.dir/clean
 
 CMakeFiles/main.dir/depend:
-	cd /home/edgar/Escritorio/3B/HPC/HEAT-COND/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/edgar/Escritorio/3B/HPC/HEAT-COND /home/edgar/Escritorio/3B/HPC/HEAT-COND /home/edgar/Escritorio/3B/HPC/HEAT-COND/build /home/edgar/Escritorio/3B/HPC/HEAT-COND/build /home/edgar/Escritorio/3B/HPC/HEAT-COND/build/CMakeFiles/main.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/edgar/Escritorio/greva/3B/HPC/HEAT-COND /home/edgar/Escritorio/greva/3B/HPC/HEAT-COND /home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/build /home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/build /home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/build/CMakeFiles/main.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/main.dir/depend
 

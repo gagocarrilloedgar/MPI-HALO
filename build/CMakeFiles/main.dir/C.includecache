@@ -6,31 +6,31 @@
 
 #IncludeRegexTransform: 
 
-/home/edgar/Escritorio/3B/HPC/HEAT-COND/MPI_basic.c
+/home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/MPI_basic.c
 headers.h
-/home/edgar/Escritorio/3B/HPC/HEAT-COND/headers.h
+/home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/headers.h
 mpi.h
-/home/edgar/Escritorio/3B/HPC/HEAT-COND/mpi.h
+/home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/mpi.h
 
-/home/edgar/Escritorio/3B/HPC/HEAT-COND/data_placer.c
+/home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/data_placer.c
 headers.h
-/home/edgar/Escritorio/3B/HPC/HEAT-COND/headers.h
+/home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/headers.h
 mpi.h
-/home/edgar/Escritorio/3B/HPC/HEAT-COND/mpi.h
+/home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/mpi.h
 
-/home/edgar/Escritorio/3B/HPC/HEAT-COND/data_to_send.c
+/home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/data_to_send.c
 headers.h
-/home/edgar/Escritorio/3B/HPC/HEAT-COND/headers.h
+/home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/headers.h
 mpi.h
-/home/edgar/Escritorio/3B/HPC/HEAT-COND/mpi.h
+/home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/mpi.h
 
-/home/edgar/Escritorio/3B/HPC/HEAT-COND/halo_com.c
+/home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/halo_com.c
 headers.h
-/home/edgar/Escritorio/3B/HPC/HEAT-COND/headers.h
+/home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/headers.h
 mpi.h
-/home/edgar/Escritorio/3B/HPC/HEAT-COND/mpi.h
+/home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/mpi.h
 
-/home/edgar/Escritorio/3B/HPC/HEAT-COND/headers.h
+/home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/headers.h
 stdio.h
 -
 stdlib.h
@@ -38,17 +38,17 @@ stdlib.h
 time.h
 -
 
-/home/edgar/Escritorio/3B/HPC/HEAT-COND/main.c
+/home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/main.c
 headers.h
-/home/edgar/Escritorio/3B/HPC/HEAT-COND/headers.h
+/home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/headers.h
 mpi.h
-/home/edgar/Escritorio/3B/HPC/HEAT-COND/mpi.h
+/home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/mpi.h
 
-/home/edgar/Escritorio/3B/HPC/HEAT-COND/worksplit.c
+/home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/worksplit.c
 headers.h
-/home/edgar/Escritorio/3B/HPC/HEAT-COND/headers.h
+/home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/headers.h
 mpi.h
-/home/edgar/Escritorio/3B/HPC/HEAT-COND/mpi.h
+/home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/mpi.h
 
 /usr/lib/openmpi/include/mpi.h
 stddef.h

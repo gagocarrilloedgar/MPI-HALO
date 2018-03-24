@@ -32,7 +32,7 @@ int main (int argc, char** argv){
    	width=N;
 	heigth=myend-mystart+1;
 
-   	M=(double *)malloc(sizeof (double)*width*width);
+   	M=(double *)malloc(sizeof (double)*width*(heigth+3));
 	R=(double *)malloc(sizeof (double)*width*1);
 	S=(double *)malloc(sizeof (double)*width*1);
 
@@ -41,39 +41,48 @@ int main (int argc, char** argv){
         printf("Out of memory\n");
         exit(1);
     }
+
 	
 	for (int j = 1; j <=heigth; ++j)
 	{
+		//printf("rank=%d ", rank());
 		for (int i = 0; i<width; ++i)
 		{
 			*(M+i+j*N)=*(Q+i+(j+mystart-1)*N);
+		//	printf(" %f-%d-%d ",*(M+i+j*N),i,j);
 		}
+		//printf("\n");
 	}
-	
+
 	data_to_send(N,M,S,&mystart,&myend);
 	halo1(R,S,N);
 	data_placing(M,R,&mystart,&myend,N);
+
+	MPI_Barrier(MPI_COMM_WORLD);
 
 	data_to_send2(N,M,S,&mystart,&myend);
 	halo2(R,S,N);
 	data_placing2(M,R,&mystart,&myend,N);
 
- 
-		for (int j = 0; j< N/2; ++j)
+	MPI_Barrier(MPI_COMM_WORLD);
+ 	
+	for (int j = 0; j< (heigth+2); ++j)
 	{
 		for (int i = 0; i < N; ++i)
 		{
 			printf(" rank=%d ", rank() );
 			if (*(M+i+j*width)<10)
 			{
-				printf("   %.1f    ",*(M+i+j*width) );
+				printf("   %.1f-%d-%d    ",*(M+i+j*width),i,j );
 			}
 			else{
-			printf("  %.1f    ",*(M+i+j*width) );
+			printf("  %.1f-%d-%d    ",*(M+i+j*width),i,j );
 			}
 		}
 		printf("\n");
 	}
+	MPI_Barrier(MPI_COMM_WORLD);
+	
 
 
 	free (R);
