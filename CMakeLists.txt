@@ -1,7 +1,7 @@
 
 cmake_minimum_required(VERSION 3.0)
 
-project(main)
+project(HALO)
 file (GLOB SOURCES "./*.c")
 set (CMAKE_C_COMPILER gcc)
 

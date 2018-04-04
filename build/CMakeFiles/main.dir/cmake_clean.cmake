@@ -1,10 +1,11 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/main.dir/worksplit.c.o"
-  "CMakeFiles/main.dir/halo_com.c.o"
-  "CMakeFiles/main.dir/main.c.o"
+  "CMakeFiles/main.dir/MPI_basic.c.o"
   "CMakeFiles/main.dir/data_placer.c.o"
   "CMakeFiles/main.dir/data_to_send.c.o"
-  "CMakeFiles/main.dir/MPI_basic.c.o"
+  "CMakeFiles/main.dir/halo_com.c.o"
+  "CMakeFiles/main.dir/halo_update.c.o"
+  "CMakeFiles/main.dir/main.c.o"
+  "CMakeFiles/main.dir/worksplit.c.o"
   "main.pdb"
   "main"
 )

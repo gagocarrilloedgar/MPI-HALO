@@ -1,4 +1,4 @@
-# Install script for directory: /home/edgar/Escritorio/greva/3B/HPC/HEAT-COND
+# Install script for directory: /home/edgar/Escritorio/greva/HPC/MPI-HALO
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/edgar/Escritorio/greva/3B/HPC/HEAT-COND/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/edgar/Escritorio/greva/HPC/MPI-HALO/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

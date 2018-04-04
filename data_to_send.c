@@ -1,11 +1,11 @@
 #include "headers.h"
 #include "mpi.h"
 
-void data_to_send(int N, double M[],double S[],int *mystart,int *myend){
+void data_to_send(int N, double M[],double S[],int mystart,int myend){
 
 	int width=N;
 	int heigth;
-	heigth= *myend-*mystart+1;
+	heigth= myend-mystart+1;
 
 	if(commsize()%2==0)
 	{
@@ -57,11 +57,11 @@ void data_to_send(int N, double M[],double S[],int *mystart,int *myend){
 
 }
 
-void data_to_send2(int N, double M[],double S[],int *mystart,int *myend){
+void data_to_send2(int N, double M[],double S[],int mystart,int myend){
 
 	int width=N;
 	int heigth;
-	heigth= *myend-*mystart+1;
+	heigth= myend-mystart+1;
 
 	if (commsize()%2==0)
 	{
@@ -111,6 +111,6 @@ void data_to_send2(int N, double M[],double S[],int *mystart,int *myend){
 		}
 	}
 
-		
+
 
 }

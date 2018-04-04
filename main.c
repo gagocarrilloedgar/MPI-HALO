@@ -5,19 +5,19 @@ int main (int argc, char** argv){
 
 	int N=8,mystart, myend,start=0,end=N,width,heigth;
 	double *M,*R,*S,*Q;
-	
+
 	checkr(MPI_Init(&argc,&argv),"init");
-	
+
 	srand (time(NULL)+rank());
 
 	Q=(double *)malloc(sizeof(double)*N*N);
-	
-	if (Q==NULL) 
+
+	if (Q==NULL)
     	{
        	 	printf("Out of memory\n");
         	exit(1);
     	}
-	
+
     //llenamos la matriz de forma random
 
    for (int j = 0; j< N; ++j)
@@ -32,17 +32,17 @@ int main (int argc, char** argv){
    	width=N;
 	heigth=myend-mystart+1;
 
-   	M=(double *)malloc(sizeof (double)*width*(heigth+3));
+  M=(double *)malloc(sizeof (double)*width*(heigth+3));
 	R=(double *)malloc(sizeof (double)*width*1);
 	S=(double *)malloc(sizeof (double)*width*1);
 
-   if (M==NULL || R==NULL || S==NULL) 
+   if (M==NULL || R==NULL || S==NULL)
     {
         printf("Out of memory\n");
         exit(1);
     }
 
-	
+
 	for (int j = 1; j <=heigth; ++j)
 	{
 		//printf("rank=%d ", rank());
@@ -53,19 +53,8 @@ int main (int argc, char** argv){
 		}
 		//printf("\n");
 	}
+	halo_update(M,S,R,N, myend,mystart);
 
-	data_to_send(N,M,S,&mystart,&myend);
-	halo1(R,S,N);
-	data_placing(M,R,&mystart,&myend,N);
-
-	MPI_Barrier(MPI_COMM_WORLD);
-
-	data_to_send2(N,M,S,&mystart,&myend);
-	halo2(R,S,N);
-	data_placing2(M,R,&mystart,&myend,N);
-
-	MPI_Barrier(MPI_COMM_WORLD);
- 	
 	for (int j = 0; j< (heigth+2); ++j)
 	{
 		for (int i = 0; i < N; ++i)
@@ -82,14 +71,13 @@ int main (int argc, char** argv){
 		printf("\n");
 	}
 	MPI_Barrier(MPI_COMM_WORLD);
-	
+
 
 
 	free (R);
 	free (M);
 	free (S);
 	free (Q);
-	
+
 	crash();
 }
-
